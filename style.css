@@ -27,7 +27,7 @@ body {
 
 .logo {
   display: block;
-  height: 5rem;
+  height: 9rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -42,6 +42,7 @@ body {
 
 .main-nav-list {
   position: fixed;
+  z-index: 19;
   display: inline-block;
   list-style: none;
   display: flex;
@@ -49,6 +50,11 @@ body {
   align-items: center;
 }
 
+.main-nav-list{
+  background-color: rgba(255, 255, 255, 0.132);
+  padding: 0.6rem 4rem;
+  border-radius: 3rem;
+}
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
@@ -73,13 +79,21 @@ body {
     background-size: cover;
     /* opacity: 0.3; */
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
  
+}
+.sh{
+    position: fixed;
 }
 
 .section-hero {
-    margin-bottom: 10rem;
+    /* padding-bottom: 10rem; */
    
+}
+
+.section-hero2{
+  /* padding-bottom: 2rem; */
+  padding-top: 2rem;
 }
 
 .hero {
@@ -96,11 +110,35 @@ body {
   font-size: 3.2rem;
   line-height: 1.3;
   color: #fff;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  /* margin-top: 3rem; */
+  padding-bottom: 1.7rem;
 }
 
+.hero-text-box p{
+    /* padding-top: 1rem; */
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
 
+.hero-text-box p span{
+    font-weight: 400;
+}
+
+.date{
+  /* display: inline-block; */
+  display: flex;
+  /* text-align: center; */
+  gap: 2.4rem;
+}
+.date div{
+  display: flex;
+  gap: 0.17rem;
+
+}
+.d{
+  height: 2.5rem;
+}
 
 .btn,
 .btn:link,
@@ -122,7 +160,7 @@ body {
 .btn--full:visited {
   color: #fff;
   margin-right: 2rem;
-  background-color: #cca3f1;
+  background-color: #5703b7;
 }
 .btn--full:hover {
   background-color: #6955ec;
@@ -152,7 +190,6 @@ body {
     text-align: center;
     /* align-items: center; */
     font-weight: 500;
-    margin
 }
 
 .up span{
@@ -169,6 +206,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /* position: fixed;
+    z-index: -1; */
 }
 
 .ob{
@@ -186,11 +225,29 @@ body {
 /* comittee */
 
 
+.sec-hero2 {
+  width: 100%;
+  height: 100vh;
+  /* background: rgba(255,255,255,.2)); */
+  background-image: url("img/cbg1.png");
+  background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+  /* opacity: 0.3; */
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+
+}
+.sh{
+  position: fixed;
+}
+
+
 
 .oc-hed {
     margin-bottom: 0.6rem;
     color: #d7d7fb;
-    font-size: 4.8rem;
+    font-size:2.8rem;
   }
 
   .abt-hed {
@@ -204,25 +261,37 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .org-com {
+  /* .org-com {
     max-width: 130rem;
     display: grid;
     gap: 3.6rem;
     padding: 0 4.8rem;
     grid-template-columns: 1fr 1fr;
-    /* margin: 0 auto;
-    align-items: center;
-    justify-content: center; */
-    /* justify-items: center; */
-  }
+  } */
+
+  /* .org-com{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  } */
   .od1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    justify-self: center;
   }
   .oc {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-self: center;
   }
+  /* .oc div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+  } */
   .od h1 {
     margin-bottom: 2rem;
   }
@@ -251,7 +320,7 @@ body {
     margin-bottom: 4rem;
   }
   .org-comittee {
-    padding-top: 10rem;
+    padding-top: 3rem;
     position: relative;
   }
   
@@ -261,4 +330,3 @@ body {
     margin-bottom: 5rem;
 
   }
-  
